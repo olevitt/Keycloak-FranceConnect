@@ -2,7 +2,7 @@ language: java
 
 deploy:
   provider: releases
-  token: ${GITHUB_TOKEN}
+  api_key: ${GITHUB_TOKEN}
   file: pom.xml
   on:
     branch: setup-ci
