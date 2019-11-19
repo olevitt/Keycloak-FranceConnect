@@ -6,7 +6,7 @@ jobs:
       script: skip
       deploy:
         provider: releases
-        token: "$GH_TOKEN"
+        token: ${GITHUB_TOKEN}
         file: pom.xml
         skip_cleanup: true
         on:
