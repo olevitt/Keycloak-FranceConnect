@@ -10,6 +10,7 @@ deploy:
   edge: true
   token:
     secure: "dsD/QB3dL4PCSXsFPWshwWZvS8VqOXNg1nwg7Yj8WmUN0GZjSeNbafzuF0wT/OwXCElet5+FP4PbWxN1p+qkWXvxzaK+NiVm8IRD8Z+mV9e9unlINNQyaDof1ZWU1e7KX5O8QUWaBlo/q6JiGPksdeU7/9JUt+/hOBoOiFx7RK0TaKZet3y3Ez+lyyuEBWnMkxlP4IDzVHxBv6GE9dht53+AWZ8/dz+ppxkH9ftsPEKhHndIjjrrLzx8i9q1B0mIY3z+Guds4bWjRW7GLWOlE68vPR1/IIRD/iyzPTBsiJmTMQCCZrMX15rpHvS06hgPg8eDl9DodedA3NSU8LqoZMra5M0hsey8cl4qwiwr4FAx3IWcsjBKFpRVKzSBoHRIs/7Hhjq8GBccxR8D/+Nm1Pfa3eHxTSQxvAUJk54pTlvG+OXqjfrq7W7GuC4+vIZyOv8mjzfHlyoId0kk6jKkpBTHfoEw5xEtM1QHC9H/6uDe1+3iFu+1u1Tx66Q6Z3fJJev7h5C4h4U9m8Qk/cB6hqL5bV2HjYKtB83CkbYH/iiTi0g+m+j1dO4E2y5ST89v07QwJuiV2Hk2DE71p2ct4UfXuNIkfttPxqjl3rjFsuiQc16a+YhDtfwZoeHHmuublOP2UVj5CHyzEztpU0HmB+RS939TI+Nj6FMKJresp30="
-  file: pom.xml
+  file_glob: true
+  file: target/*.jar
   on:
     tags: true
