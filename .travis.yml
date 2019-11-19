@@ -1,7 +1,13 @@
 language: java
-deploy:
-  provider: releases
-  api_key: $GH_TOKEN
-  file: pom.xml
-  on:
-    branch: setup-ci
+
+jobs:
+  include:
+    - stage: GitHub Release
+      script: skip
+      deploy:
+        provider: releases
+        api_key: "$GH_TOKEN"
+        file: pom.xml
+        skip_cleanup: true
+        on:
+          branch: setup-ci
