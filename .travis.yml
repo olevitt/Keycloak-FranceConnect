@@ -6,7 +6,7 @@ jobs:
       script: skip
       deploy:
         provider: releases
-        api_key: "$GH_TOKEN"
+        token: "$GH_TOKEN"
         file: pom.xml
         skip_cleanup: true
         on:
