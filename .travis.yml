@@ -1,8 +1,7 @@
 language: java
 deploy:
   provider: releases
-  api_key:
-    secure: IGyEiFeBnwWDVlpqM+iLmix2VlEFUOzE3PPXc+qJLXaO1eG6YjdgPEA7vX+pYH1CSoilrrM2/nPEU/XMVr4Xc1+AeKhEMgu75kPsgKO2rJe4qLX1McEzCE3vIqWB2whLEWN93KIqSxVpfFWfIcTGlH+jt5Ss+gm/H0tBygctvzGmU4DLk6IMfsZgppDcFEwJz/o3peYuPUVMgybHG/mtklJawrPjupvaEo68piajmJNDJG/HKzfuJ6wz1CwzUnrmMO2OO0V5WbE6ebLiZGkct73G1GCpWv9mZ99E56isjzPyWVKWc5tBfZHxVhdcdBvJwj0HbOjB0m3tpWf3xLt0UrfERsPCLNAg4bweYRC+Ms+EM31ygao1KYQ5x4CWRL4LnUYGWeN5H3GjXcWVSDt5Q/xhG6HWefc0ZU/nkFBaLAX5kuso20UAA1Iep2PIQJeQkTw27Su5P+2pq+eZVU6QfTxIrgqAEcwMSzRCucyfq/kIR6bv1MGHbQaf4cWb+6nnKh7xu46VvTB5TdO30ABo0lp0YeCsimlrDUvUbl5hhyNB4r7vofEwiZnmEXrJAkOIe8YTpTzRkdyGecIGl+PupGaJUWDzpTQ8teB3bfYt3PDo+lgJGkj6qyj/lIUg66miTgykU+l9Hk3DYn9rrmUKCHK5MXV9S+a9xMppo4+J2hE=
+  api_key: $GH_TOKEN
   file: pom.xml
   on:
     branch: setup-ci
